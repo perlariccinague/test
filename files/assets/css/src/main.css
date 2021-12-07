@@ -152,16 +152,10 @@ a:focus {
     padding: 0 2%;
 
 }
-#main .inside {
-    padding: 2em 0 0 0;
-}
-
 
 /* Header Logo */
 #header .inside {
-    display: flex;
-    justify-content: space-between;
-    align-items: flex-end;
+    text-align: center;
 }
 
 #logo {
@@ -215,24 +209,11 @@ a:focus {
 }
 
 .header-image h1 {
-    position: absolute;
-    bottom: 150px;
-    left: 25px;
-    font-size: 3.375em;
-    color: #fff;
-    line-height: 1;
-    margin-bottom: 0;
-    text-align: left;
 
+ text-align: center;
 }
 
-h1{
-    margin-top: 5px;
-    padding: 10px;
-    background: #9f111b;
-    float: left;
-    width: 60%;
-}
+
 /* Boxen */
 .box-wrapper {
     display: flex;
@@ -242,8 +223,10 @@ h1{
 }
 
 .box {
-    width: 30%;
+    width: 100%;
     min-width: 200px;
+    text-align: center;
+    margin-bottom: 2em;
 }
 
 .box h2 {
@@ -315,6 +298,7 @@ h1{
 #footer h5 {
     color: #9f111b;
     margin-top: 0;
+    margin-bottom: 0.25em;
 }
 #footer a,
 #footer a:visited {
@@ -329,6 +313,7 @@ h1{
     border-top: 1px solid #ccc;
     font-size: 0.75em;
     padding: 10px 0;
+    text-align: center;
 }
 .socialicons {
     list-style: none;
@@ -536,23 +521,38 @@ th {
     background: #efefef;
 }
 
+header .mod_form{
+    margin: 0.5em 0;
+}
 
 #form-search {
     position: relative;
-}
-#header .mod_form {
-    position: relative;
-    top: -30px;
-    right: 100px;
-    z-index: 10;
 
 }
-.mod_search .header {
-    margin-top: 2em;
-    padding: 0.5em;
-    text-align: center;
-    background: #292c37;
-    color: #fff;
+#form-search input.text {
+    margin-bottom: 0;
+    padding-right: 30px;
+    width: 115px;
+    transition: all 0.5s ease 0s;
+}
+
+#form-search input.text:focus {
+    width: 240px;
+}
+#header .mod_form form {
+    display: inline-block;
+
+}
+#form-search input.submit {
+    position: relative;
+    right: 6px;
+    top: 7px;
+    width: 24px;
+    margin: 0;
+    padding: 0;
+    border: 0;
+    border-radius: 0;
+
 }
 .mod_search form {
     border: 1px solid #ccc;
@@ -567,13 +567,63 @@ th {
     color: #fff;
 }
 
+
 .mod_search form button {
     width: 100%;
 }
 
 /* Viewport min 768px */
 @media screen and (min-width: 768px) {
+    #header .inside {
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-end;
+    }
+    #header .mod_form {
+        position: relative;
+        top: -30px;
+        right: 100px;
+        z-index: 10;
+        margin: 0;
+    }
+    #main .inside {
+        padding: 2em 0 0 0;
+    }
+    /* Header Image Home */
 
+
+    .header-image h1 {
+        position: absolute;
+        bottom: 150px;
+        left: 25px;
+        font-size: 3.375em;
+        color: #fff;
+        line-height: 1;
+        margin-bottom: 0;
+        text-align: left;
+
+    }
+
+    h1{
+        margin-top: 5px;
+        padding: 10px;
+        background: #9f111b;
+        float: left;
+        width: 60%;
+    }
+
+    .box {
+        width: 30%;
+        text-align: left;
+        margin: 0;
+    }
+    #footer h5{
+        margin-bottom: 0.5em;
+    }
+
+    .footer-copyright{
+        text-align: left;
+    }
 }
 
 /* Viewport min 960px */
