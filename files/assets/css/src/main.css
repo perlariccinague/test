@@ -149,6 +149,8 @@ a:focus {
     width: 100%;
     max-width: 960px;
     margin: 50px auto 0 auto;
+    padding: 0 2%;
+
 }
 #main .inside {
     padding: 2em 0 0 0;
@@ -510,3 +512,74 @@ th {
     right: 15px;
 }
 
+/* Events */
+.calendar td {
+    padding: 5px;
+    height: 80px;
+}
+.calendar .head {
+    text-align: center;
+}
+.calendar .label {
+    width: 30px;
+    font-size: 1rem;
+}
+.calendar .today .header{
+    background-color: darkblue;
+    color: white;
+    font-weight: 400;
+}
+
+.layout_upcoming {
+    padding: 1em 0.25em;
+    border-bottom: 1px solid black;
+    background: #efefef;
+}
+
+
+#form-search {
+    position: relative;
+}
+#header .mod_form {
+    position: relative;
+    top: -30px;
+    right: 100px;
+    z-index: 10;
+
+}
+.mod_search .header {
+    margin-top: 2em;
+    padding: 0.5em;
+    text-align: center;
+    background: #292c37;
+    color: #fff;
+}
+.mod_search form {
+    border: 1px solid #ccc;
+    padding: 25px;
+}
+
+.mod_search .header {
+    margin-top: 2em;
+    padding: 0.5em;
+    text-align: center;
+    background: #292c37;
+    color: #fff;
+}
+
+.mod_search form button {
+    width: 100%;
+}
+
+/* Viewport min 768px */
+@media screen and (min-width: 768px) {
+
+}
+
+/* Viewport min 960px */
+@media screen and (min-width: 960px) {
+    #wrapper {
+        padding: 0;
+
+    }
+}
