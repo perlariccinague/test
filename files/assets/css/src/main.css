@@ -267,7 +267,8 @@ a:focus {
 }
 
 /** Buttons **/
-.button a {
+.button a,
+button {
     display: inline-block;
     padding: 0.5em 2.75em;
     background:	#9f111b;
@@ -284,13 +285,77 @@ a:focus {
 }
 
 .button a:hover,
-.button a:focus {
+.button a:focus
+button a:hover
+button a:focus{
     background-color: #710c13;
 }
 .button-center,
 .text-center {
     text-align: center;
 }
+button {
+    cursor: pointer;
+}
+/** Formular **/
+label{
+    display: block;
+}
+
+input,
+textarea,
+select {
+    margin-bottom: 1em;
+    padding: 0.5em;
+    border: 1px solid #999;
+    outline: 0;
+    width: 100%;
+    border-radius: 2px;
+}
+
+input:focus,
+textarea:focus,
+select:focus {
+    border: 1px solid #9f111b;
+}
+
+form span.mandatory {
+    display: none;
+}
+
+.submit {
+    margin-top: 0;
+}
+
+p.error {
+    color: red;
+    background: #f1f1f1;
+    border: 2px solid red;
+    padding: 0.5em;
+    margin: 0 0 0.25em 0;
+}
+
+.radio_container span {
+    margin-right: 2em;
+}
+
+.radio_container input {
+    width: auto;
+    margin-left: 2px;
+}
+
+.radio_container label {
+    display: inline-block;
+}
+
+.checkbox_container input {
+    width: auto;
+}
+
+.checkbox_container label {
+    display: inline-block;
+}
+
 #footer {
     margin-top: 40px;
     border-top: 1px solid #ccc;
@@ -522,7 +587,7 @@ th {
 }
 
 header .mod_form{
-    margin: 0.5em 0;
+
 }
 
 #form-search {
@@ -544,7 +609,7 @@ header .mod_form{
 
 }
 #form-search input.submit {
-    position: relative;
+    position: absolute;
     right: 6px;
     top: 7px;
     width: 24px;
@@ -566,6 +631,18 @@ header .mod_form{
     background: #292c37;
     color: #fff;
 }
+mark {
+    background: yellow;
+    font-weight: 700;
+}
+
+.mod_search > div {
+    padding: 0.75em 0.5em;
+}
+
+.mod_search .odd {
+    background: #f3f3f3;
+}
 
 
 .mod_search form button {
@@ -580,9 +657,9 @@ header .mod_form{
         align-items: flex-end;
     }
     #header .mod_form {
-        position: relative;
-        top: -30px;
-        right: 100px;
+        position: absolute;
+        top: -36px;
+        right: 0px;
         z-index: 10;
         margin: 0;
     }
